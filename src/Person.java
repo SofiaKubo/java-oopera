@@ -8,4 +8,21 @@ public class Person {
         this.surname = surname;
         this.gender = gender;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    @Override
+    public String toString() {
+        return name + " " + surname;
+    }
+
+    protected String getFullName() {
+        return name + " " + surname;
+    }
 }
